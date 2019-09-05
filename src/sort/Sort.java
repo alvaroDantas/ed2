@@ -10,7 +10,7 @@ public abstract class Sort {
 
     Scanner scanner = new Scanner(System.in);
     private int n;
-    int vet[];
+    protected int vet[];
     int aux;
     int i = 0, j = 0;
     

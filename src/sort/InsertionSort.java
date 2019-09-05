@@ -1,5 +1,4 @@
 package sort;
-
 /**
  *
  * @author DLT1CA
@@ -14,8 +13,6 @@ public class InsertionSort extends Sort {
     public InsertionSort(int n) {
         super(n);
     }
-    
-    
 
     @Override
     public void ordernarAsc() {
@@ -42,5 +39,4 @@ public class InsertionSort extends Sort {
             vet[j + 1] = eleito;
         }
     }
-
 }
