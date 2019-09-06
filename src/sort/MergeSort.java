@@ -24,6 +24,17 @@ public class MergeSort{
         
     }
 
+    public static void merge(int vet[], int inicio, int fim){
+        int meio;
+        if(inicio<fim)
+        {
+            meio = (inicio+fim)/2;
+            merge(vet, inicio, meio);
+            merge(vet, meio+1, fim);
+            intercala(vet, inicio, fim, meio);
+        }
+    }
+    
     public static int[] intercala(int vet[], int inicio, int fim, int meio){
         int inicioVet1 = inicio, inicioVet2 = meio+1, i;
         int aux[] = new int[vet.length];
